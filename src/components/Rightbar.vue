@@ -1,6 +1,6 @@
 <template>
     <div class="container_content">
-        <div class="team_details mt-4 px-4">
+        <div class="team_details mt-4 px-3">
             <section class="select">
                 <form class="form-inline my-3">
                     <select class="btn-top">
@@ -71,10 +71,16 @@ export default {
     data() {
       return {
         sections: [
-          {value: 65, background: "linear-gradient(225.62deg, #5B6BFF 35.68%, rgba(54, 58, 222, 0.6) 74.73%) !important"},
+          {value: 65, color:`linear-gradient(225.62deg, #5B6BFF 35.68%, rgba(54, 58, 222, 0.6) 74.73%);`},
         ]
       };
-    }
+    },
+    // methods:{
+    //     let gradient = ctx.createLinearGradient(0, 0, 0, 450);
+    //     gradient.addColorStop(0, 'rgba(255, 0,0, 0.5)');
+    //     gradient.addColorStop(0.5, 'rgba(255, 0, 0, 0.25)');
+    //     gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');
+    // }
 }
 </script>
 
@@ -82,7 +88,7 @@ export default {
     .container_content{
         position: absolute;
         font-family: Nunito;
-        width: 20%;
+        width: 18%;
         height: 100vh;
         box-shadow: 0px 0px 17px rgb(8 37 100 / 9%);
         background: white;
@@ -120,7 +126,7 @@ export default {
                             .title{
                                 font-style: normal;
                                 font-weight: normal;
-                                font-size: 12px;
+                                font-size: 11px;
                                 line-height: 140%;
                                 color: #898CA6;
                                 margin-bottom: 0;
