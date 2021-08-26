@@ -20,5 +20,6 @@
     font-size: 40px;
     color: rgb(167, 167, 167);
     font-weight: 600;
+    font-family: Nunito;
 }
 </style>

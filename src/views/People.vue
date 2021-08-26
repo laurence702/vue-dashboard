@@ -40,13 +40,29 @@
                                 <div class="person_details mt-3">
                                     <h5 class="mb-0">{{person.name}}</h5>
                                     <h6>{{person.position}}</h6>
-                                    <div>
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <div class="d-flex w-75 details_star m-auto">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path d="M6.5 0C2.91596 0 0 2.91596 0 6.5C0 10.084 2.91596 13 6.5 13C10.084 13 13 10.084 13 6.5C13 2.91596 10.084 0 6.5 0ZM6.5 12.1875C3.36386 12.1875 0.812504 9.63614 0.812504 6.5C0.812504 3.36386 3.36386 0.812504 6.5 0.812504C9.63614 0.812504 12.1875 3.36386 12.1875 6.5C12.1875 9.63614 9.63614 12.1875 6.5 12.1875Z" fill="#888888"/>
                                             <path d="M6.90625 2.43758H6.09375V6.66828L8.65026 9.2248L9.22473 8.65033L6.90625 6.33186V2.43758Z" fill="#888888"/>
                                         </svg>
-                                        <img src="../assets/pill.png" alt=""/>
-                                        <span>63%</span>
+                                        <div class="d-flex progress_container">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-one" role="progressbar"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-two" role="progressbar"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-three" role="progressbar"
+                                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                        <p class="ml-2">63%</p>
                                     </div>
                                     <hr>
 
@@ -161,7 +177,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 13px;
-        line-height: 18px;
+        line-height: 26px;
         color: #333333;
         border-radius: 4px 0px 0px 4px;
         height: 45px;
@@ -255,8 +271,45 @@
                 text-align: center;
                 color: #9B9B9B;
             }
+            .details_star{
+                p{
+                    font-size: 13px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #888888;
+                    margin-bottom: 0;
+                }
+            }
         }
 
     }
 }
+
+.progress_container{
+    justify-content:space-between;
+    width: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    .progress{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 0.35rem;
+        overflow: hidden;
+        font-size: .75rem;
+        background-color: #e9ecef;
+        border-radius: .25rem;
+        width: 30%;
+    }
+    .progress-bar-one{
+        background: #363ADE !important;
+    }
+    .progress-bar-two{
+        background: #5B6BFF;
+    }
+    .progress-bar-three{
+        background: #40B3FE;
+    }
+}
+
 </style>
