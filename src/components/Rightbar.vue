@@ -70,17 +70,15 @@
 export default {
     data() {
       return {
+        gradient: `let gradient = ctx.createLinearGradient(0, 0, 0, 450);
+        gradient.addColorStop(0, 'rgba(255, 0,0, 0.5)');
+        gradient.addColorStop(0.5, 'rgba(255, 0, 0, 0.25)');
+        gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');`,
         sections: [
-          {value: 65, color:`linear-gradient(225.62deg, #5B6BFF 35.68%, rgba(54, 58, 222, 0.6) 74.73%);`},
+          {value: 65, color:`$gradient`},
         ]
       };
     },
-    // methods:{
-    //     let gradient = ctx.createLinearGradient(0, 0, 0, 450);
-    //     gradient.addColorStop(0, 'rgba(255, 0,0, 0.5)');
-    //     gradient.addColorStop(0.5, 'rgba(255, 0, 0, 0.25)');
-    //     gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');
-    // }
 }
 </script>
 
