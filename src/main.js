@@ -4,6 +4,9 @@ import router from './router'
 import store from './store'
 
 import Donut from 'vue-css-donut-chart';
+import VueCharts from 'vue-chartjs'
+import { Bar } from 'vue-chartjs'
+
 import 'vue-css-donut-chart/dist/vcdonut.css';
 Vue.use(Donut);
 

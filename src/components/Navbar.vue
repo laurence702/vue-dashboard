@@ -43,7 +43,7 @@ export default {
 <style lang="scss" scoped>
     nav{
         background: white;
-        box-shadow: 0px 0px 17px rgb(8 37 100 / 9%);
+        box-shadow: 0px 0px 17px rgba(8,37,100,0.09);
         z-index: 1000000;
         padding: 1% 2%;
         .navbar-brand{
